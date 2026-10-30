@@ -1,0 +1,31 @@
+/* Colours come from WonderRate AppPalette.light. The system font is required by the site contract. */
+:root { --bg: #F5F6F8; --surface: #FFFFFF; --text: #1C1E24; --muted: #6C727E; --border: #DADDE3; }
+* { box-sizing: border-box; }
+html { scroll-behavior: auto; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 400 17px/1.75 system-ui, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif; }
+header, main, footer { width: min(100% - 48px, 760px); margin-inline: auto; }
+header { padding-block: 32px 24px; }
+main { background: var(--surface); padding: 32px; border: 1px solid var(--border); border-radius: 12px; }
+footer { padding-block: 24px 48px; }
+h1, h2, h3 { font-weight: 700; line-height: 1.5; overflow-wrap: anywhere; }
+h1 { font-size: 32px; margin: 0 0 16px; }
+h2 { font-size: 24px; margin: 0 0 16px; }
+h3 { font-size: 19px; margin: 32px 0 8px; }
+p, ul { margin: 0 0 16px; }
+ul { padding-inline-start: 24px; }
+li + li { margin-top: 8px; }
+a { color: var(--text); text-decoration: underline; text-underline-offset: 4px; overflow-wrap: anywhere; }
+a:hover { text-decoration-thickness: 3px; }
+a:focus-visible { outline: 3px solid var(--text); outline-offset: 4px; border-radius: 2px; }
+nav { display: flex; flex-wrap: wrap; gap: 8px 24px; margin-bottom: 24px; }
+nav a, header a { display: inline-flex; align-items: center; min-height: 44px; }
+.meta { color: var(--muted); }
+.hosts { overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+article + article { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--border); }
+article, h2 { scroll-margin-top: 24px; }
+.contact { margin-top: 32px; }
+@media (max-width: 519px) {
+ header, main, footer { width: calc(100% - 32px); }
+ main { padding: 24px 16px; }
+ h1 { font-size: 28px; }
+}

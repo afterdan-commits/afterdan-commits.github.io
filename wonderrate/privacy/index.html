@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Team Wonder — WonderRate privacy policy and contact."><title>WonderRate — Privacy policy / 개인정보처리방침</title><link rel="stylesheet" href="../../style.css"></head><body><header><a href="../../">Team Wonder</a></header><main><h1>원더레이트 · WonderRate</h1><nav aria-label="Language / 언어"><a href="#ko" lang="ko">한국어</a><a href="#en" lang="en">English</a></nav><article id="ko" lang="ko" aria-labelledby="ko-title">
+<h2 id="ko-title">개인정보처리방침</h2>
+<p class="meta">시행일: <time datetime="2026-10-30">2026-10-30</time> · 원더레이트</p>
+<h3>운영자와 적용 범위</h3>
+<p>Team Wonder는 여행자를 위한 환율 비교 앱 원더레이트(WonderRate)를 제공합니다. 앱에는 계정이나 로그인 기능이 없습니다. 개발자는 사용자 데이터를 받는 자체 서버를 운영하지 않으며, 별도의 분석 SDK도 사용하지 않습니다. 다만 환율 제공업체와 Google 광고 서비스는 아래와 같이 네트워크 요청과 데이터를 처리합니다.</p>
+<h3>기기에 저장하는 정보와 Android 백업</h3>
+<p>앱은 관심 통화 목록과 순서, 고정한 통화, 이름을 붙인 레이아웃 슬롯, 화면 설정, 시작 안내 완료 여부, 캐시된 환율과 갱신 시각을 기기에 저장합니다. 로컬 저장소는 settings, watchlist, rates라는 Hive 상자입니다. 레이아웃 이름과 계산한 금액을 환율 제공업체에 보내지 않습니다.</p>
+<p>홈 화면 위젯에는 최대 네 통화의 국가명, 통화 코드, 환율, 표시용 갱신 시각을 기기 안에서 전달합니다. 위젯 데이터는 개발자에게 전송하지 않습니다.</p>
+<p>Android의 백업 및 기기 이전 설정에 따라 settings.hive와 watchlist.hive 파일이 백업되거나 새 기기로 옮겨질 수 있습니다. 관심 통화와 레이아웃 슬롯은 watchlist.hive에 포함됩니다. rates.hive와 위젯 데이터는 앱의 백업 허용 목록에 포함되지 않습니다. 백업은 Google 또는 기기 운영체제가 관리하며, Android 설정에서 관리할 수 있습니다.</p>
+<h3>환율 요청과 외부 링크</h3>
+<p>앱은 환율을 가져오기 위해 다음 호스트에 HTTPS로 요청합니다. 각 제공업체에는 기기의 IP 주소와 요청한 환율 경로가 전달됩니다. IP 주소는 연결을 위해 필요하며 제공업체가 접속 기록으로 보관할 수 있습니다. 해당 업체의 보관 기간은 개발자가 통제하지 않습니다.</p>
+<ul class="hosts"><li><strong>bo.dolarapi.com</strong> — 볼리비아 병행시장 환율</li><li><strong>cdn.jsdelivr.net</strong> — 대체 일별 환율</li><li><strong>dolarapi.com</strong> — 아르헨티나 병행시장 환율</li><li><strong>open.er-api.com</strong> — 기본 일별 환율</li><li><strong>query1.finance.yahoo.com</strong> — Yahoo 장중 환율</li><li><strong>ve.dolarapi.com</strong> — 베네수엘라 병행시장 환율</li><li><strong>www.kebhana.com</strong> — 하나은행 대체 장중 환율</li></ul>
+<p>통화 추가 화면의 출처 링크는 www.exchangerate-api.com, github.com, dolarapi.com의 웹페이지를 외부 브라우저로 엽니다. 자체 홍보 배너를 누르면 외부 BAND 페이지인 <a href="https://www.band.us/@wisdomwanderers">www.band.us/@wisdomwanderers</a>가 열립니다. 외부 페이지에는 각 서비스의 개인정보처리방침이 적용되며, 방문 시 해당 서비스에 IP 주소 등 접속 정보가 전달됩니다.</p>
+<h3>광고, 동의, 개인정보 선택</h3>
+<p>앱에는 Google AdMob 배너 광고와 자체 홍보 배너가 표시됩니다. Google Mobile Ads SDK는 IP 주소와 이를 통한 대략적인 위치, 앱 실행·탭·광고 조회 등의 상호작용, 성능·오류 등의 진단 정보, Android 광고 ID와 앱 세트 ID를 비롯한 기기 식별자를 수집하고 공유합니다. 해당하는 경우 기기에 로그인한 계정과 관련된 식별자도 처리할 수 있습니다. 목적은 광고 제공, 분석, 사기 방지입니다. Google은 이 데이터를 전송할 때 TLS로 암호화합니다. 개발자는 별도 분석 SDK를 넣지 않았지만 광고 SDK의 분석 처리는 이루어집니다.</p>
+<p>Google의 UMP(User Messaging Platform)는 동의 상태와 개인정보 선택을 처리합니다. 앱은 광고 요청이 허용된 상태인지 확인한 다음 광고 SDK를 초기화하고 광고를 요청합니다. 필요한 지역에서는 동의 화면이 표시됩니다. 선택과 지역에 따라 개인 맞춤 광고, 개인 맞춤이 아닌 광고 또는 제한된 광고가 제공될 수 있습니다. 동의를 거부해도 모든 광고 관련 데이터 처리가 중단된다고 보장하지는 않습니다. 환율 조회는 광고 동의와 별도로 동작합니다.</p>
+<p>개인정보 선택 변경이 필요한 경우 앱 설정에 표시되는 ‘광고 개인정보 설정’(Ad privacy choices)에서 선택을 바꿀 수 있습니다. Android 설정의 개인정보 보호 또는 광고 메뉴에서 광고 ID를 삭제하거나 재설정하고 광고 개인정보 설정을 관리할 수 있습니다. 메뉴 이름과 제공 기능은 Android 버전에 따라 다릅니다.</p>
+<p>자세한 내용은 <a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>, <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure?hl=ko">Google 광고 SDK 데이터 공시</a> 및 <a href="https://support.google.com/My-Ad-Center-Help/answer/12155764?hl=ko">Android 광고 설정 안내</a>에서 확인할 수 있습니다.</p>
+<h3>어린이</h3>
+<p>원더레이트는 13세 미만 어린이를 대상으로 하지 않습니다. 어린이를 위한 콘텐츠나 계정 기능을 제공하지 않습니다.</p>
+<h3>보관과 삭제</h3>
+<p>로컬 데이터는 앱을 사용하는 동안 기기에 남으며, 환율 캐시는 새 데이터로 교체됩니다. 앱 데이터 삭제 또는 앱 제거로 기기에 저장된 앱 데이터를 삭제할 수 있습니다. Android 백업본이 남아 있으면 재설치 시 설정과 관심 통화가 복원될 수 있으므로, 백업본은 Android 또는 Google 백업 설정에서 별도로 관리해 주시기 바랍니다.</p>
+<p>앱 제거만으로 Google이나 환율 제공업체의 접속 기록까지 삭제되지는 않습니다. Google과 각 제공업체는 자체 정책에 따라 데이터를 보관하고 삭제합니다. 개발자는 해당 서버의 데이터를 직접 조회하거나 삭제할 수 없으며, 앱에는 서버 데이터 삭제 요청 기능이 없습니다. 관련 문의는 아래 연락처로 보내실 수 있습니다.</p>
+<h3>방침 변경과 연락처</h3>
+<p>데이터 처리 방식이 달라지면 이 페이지의 방침과 시행일을 수정합니다. 중요한 변경은 필요한 경우 앱을 통해 안내합니다.</p>
+<p>책임자: Team Wonder<br>문의: <a href="mailto:afterdan@gmail.com">afterdan@gmail.com</a></p>
+<p class="meta">이 정적 사이트는 외부 스크립트, 분석 도구, 쿠키를 사용하지 않습니다. GitHub Pages가 사이트를 호스팅하며, 방문 요청의 IP 주소 등을 자체 정책에 따라 처리할 수 있습니다.</p>
+</article><article id="en" lang="en" aria-labelledby="en-title">
+<h2 id="en-title">Privacy policy</h2>
+<p class="meta">Effective date: <time datetime="2026-10-30">2026-10-30</time> · WonderRate</p>
+<h3>Responsibility and scope</h3>
+<p>Team Wonder provides WonderRate, a currency comparison app for travellers. The app has no account or login. The developer operates no server that receives user data and uses no separate analytics SDK. Rate providers and Google advertising services process network requests and data as described below.</p>
+<h3>On-device data and Android backup</h3>
+<p>The app stores your watchlist, order, pinned currencies, named layout slots, display settings, onboarding status, cached rates, and update times on your device. These records use the settings, watchlist, and rates Hive boxes. The app does not send layout names or calculated amounts to rate providers.</p>
+<p>The home-screen widget receives up to four currency lines and an update label within your device. Each line contains a country name, currency code, and rate. The developer does not receive widget data.</p>
+<p>Depending on Android backup and device-transfer settings, Android can back up or transfer settings.hive and watchlist.hive. The watchlist file includes layout slots. The backup allowlist excludes rates.hive and widget data. Google or your device operating system manages backups. You can manage them in Android settings.</p>
+<h3>Rate requests and external links</h3>
+<p>The app requests rates from these hosts over HTTPS. Each provider receives your device IP address and the requested rate path. The IP address is necessary for the connection. Providers can retain access logs under their own policies. The developer does not control their retention periods.</p>
+<ul class="hosts"><li><strong>bo.dolarapi.com</strong> — Bolivia parallel rates</li><li><strong>cdn.jsdelivr.net</strong> — fallback daily rates</li><li><strong>dolarapi.com</strong> — Argentina parallel rates</li><li><strong>open.er-api.com</strong> — primary daily rates</li><li><strong>query1.finance.yahoo.com</strong> — Yahoo intraday rates</li><li><strong>ve.dolarapi.com</strong> — Venezuela parallel rates</li><li><strong>www.kebhana.com</strong> — Hana Bank fallback intraday rates</li></ul>
+<p>Source links in the add-country screen open www.exchangerate-api.com, github.com, and dolarapi.com in an external browser. A tap on the house banner opens the external BAND page <a href="https://www.band.us/@wisdomwanderers">www.band.us/@wisdomwanderers</a>. These services receive connection information, including your IP address. Their own privacy policies apply.</p>
+<h3>Ads, consent, and privacy choices</h3>
+<p>The app shows Google AdMob banner ads and a house banner. Google Mobile Ads SDK collects and shares IP addresses and inferred approximate location, app and ad interactions, diagnostic information, and device identifiers. Interactions include app launches, taps, and ad views. Diagnostics include performance and error information. Identifiers include Android advertising ID and app set ID. If applicable, Google also processes identifiers related to accounts signed in on the device. Google uses these data for advertising, analytics, and fraud prevention. Google encrypts these data in transit with TLS. The app has no separate analytics SDK, but the advertising SDK performs analytics.</p>
+<p>Google UMP (User Messaging Platform) processes consent status and privacy choices. The app checks whether ad requests are allowed before it initializes the advertising SDK or requests ads. A consent form appears where required. Depending on region and choices, Google can serve personalized, non-personalized, or limited ads. Rejecting consent does not necessarily stop all advertising data processing. Rate requests work independently of ad consent.</p>
+<p>When privacy options are required, open ‘Ad privacy choices’ in the app settings to change your choices. You can also reset or delete your advertising ID and manage ad privacy in Android settings. Look under Privacy or Ads. Menu names and available controls depend on the Android version.</p>
+<p>See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">Google ads SDK data disclosure</a>, and <a href="https://support.google.com/My-Ad-Center-Help/answer/12155764?hl=en">Android ad controls</a> for details.</p>
+<h3>Children</h3>
+<p>WonderRate is not directed to children under 13. It provides no child-focused content or accounts.</p>
+<h3>Data retention and deletion</h3>
+<p>Local data remain on your device while you use the app. New rates replace the cache. To delete local app data, clear app data in Android settings or uninstall the app. If an Android backup remains, reinstallation can restore settings and the watchlist. Manage backup copies separately in Android or Google backup settings.</p>
+<p>Uninstalling the app does not delete Google data or rate-provider access logs. Google and each provider retain and delete data under their own policies. The developer cannot inspect or delete data on those servers. The app has no server-data deletion request function. You can send questions to the contact below.</p>
+<h3>Policy changes and contact</h3>
+<p>If data practices change, Team Wonder updates this page and the effective date. The app provides notice of material changes where necessary.</p>
+<p>Responsible party: Team Wonder<br>Contact: <a href="mailto:afterdan@gmail.com">afterdan@gmail.com</a></p>
+<p class="meta">This static site uses no external scripts, analytics, or cookies. GitHub Pages hosts it and can process visitor IP addresses under its own policies.</p>
+</article></main><footer><a href="mailto:afterdan@gmail.com">afterdan@gmail.com</a></footer></body></html>
