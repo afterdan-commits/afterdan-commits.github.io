@@ -30,6 +30,7 @@
     <p>클립보드 내보내기나 Excel 공유를 실행하면 선택한 대상에서 백업 또는 내보낸 기록에 접근할 수 있습니다. JSON·Drive 백업에는 영수증 이미지 파일이 포함되지 않습니다. Android의 시스템 백업과 기기 이전 설정에 따라 앱 기록이 백업되거나 복원될 수도 있으며, 앱의 영수증 저장 폴더는 이 백업에서 제외합니다.</p>
     <h3>광고와 개인정보 선택</h3>
     <p>앱은 Google AdMob 배너 광고를 지원합니다. Google 광고 SDK는 IP 주소와 대략적인 위치, 앱·광고 상호작용, 성능·오류 정보, 광고 ID·앱 세트 ID 등 식별자를 광고 제공, 분석, 부정행위 방지 목적으로 수집·공유할 수 있습니다. 전송에는 TLS 암호화를 사용합니다. 별도의 자체 분석 SDK는 사용하지 않습니다.</p>
+    <p>Google UMP는 앱 시작 시 HTTPS로 동의 정보를 갱신합니다. 이 요청에는 IP 주소, 기기 모델·Android 버전, 언어, 화면 정보, 앱 정보와 저장된 동의 설정이 포함될 수 있습니다. 광고 표시를 꺼도 동의 정보 갱신은 계속됩니다.</p>
     <p>Google UMP로 필요한 동의와 개인정보 선택을 처리하고, 광고 요청이 허용된 경우 광고 SDK를 초기화합니다. 설정의 ‘광고 표시’를 끄면 광고 요청을 중단하고 배너를 숨깁니다. 필요한 경우 ‘광고 개인정보 옵션’에서 동의 선택을 변경할 수 있습니다. Android 광고 설정에서도 광고 ID를 관리할 수 있습니다. 동의 거부가 외부 서비스의 모든 데이터 처리를 중단한다는 의미는 아닙니다.</p>
     <p><a href="https://policies.google.com/privacy?hl=ko">Google 개인정보처리방침</a>과 <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure?hl=ko">광고 SDK 데이터 공시</a>를 참고하세요.</p>
     <h3>보관·삭제·연결 해제</h3>
@@ -58,6 +59,7 @@
     <h3>Ads and choices</h3>
     <p>Google AdMob supports banner ads. Its SDK can collect and share IP addresses, approximate location, interactions, diagnostics, and device identifiers for ads, analytics, and fraud prevention. It uses TLS in transit. Google UMP handles consent choices before allowed ad requests. Turn off ads in app settings to stop requests and hide banners. Where required, open the ad privacy options to change consent. Android settings also provide advertising ID controls. Rejecting consent does not stop every external service process.</p>
     <p>See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a> and <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure">ads data disclosure</a>. The app uses no separate analytics SDK.</p>
+    <p>UMP refreshes consent information over HTTPS at startup, even when ads are disabled. Requests can include your IP address, device model, Android version, language, screen details, app information, and stored consent choices.</p>
     <h3>Retention and deletion</h3>
     <p>Local records remain until you delete them. Delete trips or expenses in the app, or clear app data in Android settings. Uninstalling does not delete separate backups or exported files. Manage system backups in Android settings and Drive app data in Google Drive.</p>
     <p>You can disconnect Google in the app or revoke access in your Google account. Disconnecting does not delete existing backups. The developer cannot access or delete your local records or Drive backups. External providers manage their own retention and deletion.</p>
